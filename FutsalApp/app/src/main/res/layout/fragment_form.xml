@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam" />
+
+        <Button
+            android:id="@+id/btnJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvJam"
+            android:text="Pick" />
+
+        <EditText
+            android:id="@+id/edtJam"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnJam"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvJam" />
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/btnJam"/>
+
+        <Button
+            android:id="@+id/btnTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTanggal"
+            android:text="Pick" />
+
+        <EditText
+            android:id="@+id/edtTanggal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnTanggal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvTanggal" />
+
+        <TextView
+            android:id="@+id/tvLama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lama"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/btnTanggal"/>
+        <EditText
+            android:id="@+id/edtLama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLama"/>
+
+        <Button
+            android:id="@+id/btnPesan"
+            android:text="Pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtLama"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
